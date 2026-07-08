@@ -8,7 +8,7 @@ class ProgressaoAritmetica:
         termos = []
         for i in range(self.n):
             termos.append(self.a1 + self.r * i)
-        return termos
+        return termo
 
     def calcular_soma(self):
         an = self.a1 + self.r * (self.n - 1)

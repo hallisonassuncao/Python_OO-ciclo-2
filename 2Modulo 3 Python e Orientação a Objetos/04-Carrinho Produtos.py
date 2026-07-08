@@ -8,7 +8,7 @@ class Produto:
         return self.__nome
     
     def get_preco(self):
-        return self.__precs
+        return self.__preco
     
     def get_quantidade(self):
         return self.__quantidade

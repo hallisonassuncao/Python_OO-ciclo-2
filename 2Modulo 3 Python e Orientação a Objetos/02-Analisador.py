@@ -17,7 +17,7 @@ class AnalisadorString:
 
         for caracter in self.__texto:
             if caracter in vogais:
-                contador += 11
+                contador += 1
         
         return contador
     

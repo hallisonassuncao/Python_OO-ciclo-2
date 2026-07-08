@@ -8,7 +8,7 @@ class Criptografador:
             'e':'3','E':'3',
             'i':'1','I':'1',
             'o':'0','O':'0',
-            'u':'8','U':
+            'u':'8','U':'8'
         }
 
         frase_criptografada = ""

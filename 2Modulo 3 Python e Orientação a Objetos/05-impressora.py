@@ -18,10 +18,10 @@ class Documento:
 
 class Impressora:
     def imprimir(self, documento):
-        print("\n===Impressão do Documento===")
+        print("\n<===Impressão do Documento===>")
         print(f"Título: {documento.get_titulo()}")
         print(f"Conteúdo: {documento.get_conteudo()}")
-        print("<=======================>")
+        print("<=============>")
         
 
 def main():
@@ -38,15 +38,15 @@ def main():
         opcao = input("\nEscolha uma opção: ")
 
         if opcao == "1":
-            titulo = input("\nDigite o título do documento: ")
-            conteudo = input("Digite o conteúdo do documento: ")
+            titulo = input("\nDigite o Título do documento: ")
+            conteudo = input("Digite o Conteúdo do documento: ")
             doc = Documento(titulo, conteudo)
             documentos.append(doc)
-            print("\nDocumento criado com sucesso!\n")
+            print("\nDocumento criado com Sucesso!\n")
         
         elif opcao == "2":
             if not documentos:
-                print("\nNenhum documento criado ainda.\n")
+                print("\nNenhum documento criado.\n")
             else:
                 print("\n===Lista de Documentos===")
                 for i, doc in enumerate(documentos):

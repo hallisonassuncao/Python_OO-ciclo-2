@@ -30,23 +30,23 @@ def main():
 
     while True:
         print("\n 😎 ==MENU== 😎")
-        print("1. Criar novo documento")
-        print("2. Listar documentos")
-        print("3. Imprimir documento")
+        print("1. Criar novo Documento")
+        print("2. Listar Documentos")
+        print("3. Imprimir Documentos")
         print("4. Sair")
 
         opcao = input("\nEscolha uma opção: ")
 
         if opcao == "1":
-            titulo = input("\nDigite o Título do documento: ")
-            conteudo = input("Digite o Conteúdo do documento: ")
+            titulo = input("\nDigite o Título do Documento: ")
+            conteudo = input("Digite o Conteúdo do Documento: ")
             doc = Documento(titulo, conteudo)
             documentos.append(doc)
             print("\nDocumento criado com Sucesso!\n")
         
         elif opcao == "2":
             if not documentos:
-                print("\nNenhum documento criado.\n")
+                print("\nNenhum Documento criado.\n")
             else:
                 print("\n===Lista de Documentos===")
                 for i, doc in enumerate(documentos):
@@ -54,9 +54,9 @@ def main():
         
         elif opcao == "3":
             if not documentos:
-                print("\nNenhum documento disponível para impressão.\n")
+                print("\nNenhum Documento disponível para impressão.\n")
             else:
-                print("\nEscolha o número do documento para imprimir: ")
+                print("\nEscolha o número do Documento para imprimir: ")
                 for i, doc in enumerate(documentos):
                     print(f"{i + 1}. {doc.get_titulo()}")
 
@@ -71,11 +71,11 @@ def main():
                     print("\nEntrada inválida.Digite um número.\n")
 
         elif opcao == "4":
-            print("\nEncerrando o programa...\n")
+            print("\nEncerrando o Programa...\n")
             break
 
         else:
-            print("\nOpção inválida. Tente novamente.\n")
+            print("\nOpção inválida. Tente Novamente.\n")
 
 
 if __name__ == "__main__":

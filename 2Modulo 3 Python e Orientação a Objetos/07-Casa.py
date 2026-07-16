@@ -19,7 +19,7 @@ class Casa:
 
     def listar_comodos(self):
         if not self.__comodos:
-            print("\nNenhum cômodo foi adicionado ainda.\n")
+            print("\nNenhum cômodo foi adicionado.\n")
         else:
             print("\nCômodos da casa: ")
             for comodo in self.__comodos:
@@ -36,7 +36,7 @@ def main():
     casa = None
 
     while True:
-        print("\n<===MENU===>")
+        print("\n<== ✨ MENU ✨ ==>")
         print("1. Criar nova casa")
         print("2. Adicionar cômodo")
         print("3. Listar cômodos")

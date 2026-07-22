@@ -41,7 +41,7 @@ def main():
     participantes = []
 
     while True:
-        print("\n====== Sistema de Participantes ======")
+        print("\n======Sistema de Participantes😎======")
         print("1 - Novo cadastro")
         print("2 - Exibir participantes")
         print("3 - Gerar certificados")

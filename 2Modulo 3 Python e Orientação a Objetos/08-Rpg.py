@@ -22,7 +22,7 @@ def main():
 
     lista_personagens = [personagem, guerreiro]
 
-    print("\n--- Ataques dos Personagens ---")
+    print("\n--- Ataques dos Guerreiros ---")
     for p in lista_personagens:
         p.atacar()
 

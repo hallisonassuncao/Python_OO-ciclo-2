@@ -34,18 +34,6 @@ class CavaleiroDeOuro(Personagem):
         print(f"\n{self.nome} defende a casa de {self.casa_do_zoodiaco} com honra!")
 
 
-class CavaleiroHibrido(CavaleiroDeBronze, CavaleiroDeOuro):
-    def __init__(self, nome, constelacao, poder_de_luta, casa_do_zoodiaco):
-        CavaleiroDeOuro.__init__(self, nome, constelacao, casa_do_zoodiaco)
-        self.poder_de_luta = poder_de_luta
-
-    def golpe_especial(self):
-        print(f"\n{self.nome} realiza um golpe híbrido com poder de luta {self.poder_de_luta}!")
-
-    def defender_casa(self):
-        print(f"\n{self.nome} protege a casa de {self.casa_do_zoodiaco} com poder total!")
-
-
 def main():
     personagens = []
 
@@ -55,6 +43,7 @@ def main():
         print("2. Listar Personagens")
         print("3. Executar Habilidades")
         print("4. Sair")
+
         opcao = input("\nEscolha uma opção: ")
 
         if opcao == "1":

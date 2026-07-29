@@ -2,7 +2,7 @@ from abc import ABC, abstractmethod
 
 class ClubeParticipante(ABC):
     def __init__(self, nome, pais, confederacao, ranking_fifa, gols_marcados, vitorias):
-        self. nome = nome
+        self.nome = nome
         self.pais = pais
         self.confederacao = confederacao
         self.ranking_fifa = ranking_fifa
@@ -33,7 +33,7 @@ class ClubeUEFA(ClubeParticipante):
     def gerar_relatorio_tecnico(self):
         self.exibir_dados()
         desempenho = self.calcular_desempenho()
-        print(f"Desempenho: {desempenho:.2f}")
+        print(f"Desempenho: {desempenho:.2f}") 
 
 
 class ClubeCONMEBOL(ClubeParticipante):

@@ -47,10 +47,10 @@ class ClubeCONMEBOL(ClubeParticipante):
 
 
 def main():
-    Barcelona = ClubeUEFA("Barcelona", "Noruega", "UEFA", 1, 15, 6)
+    Arsenal = ClubeUEFA("Arsenal", "Inglaterra", "UEFA", 1, 15, 6)
     Flamengo = ClubeCONMEBOL("Flamengo", "Brasil", "CONMEBOL", 8, 15, 5)
 
-    clubes = [Barcelona, Flamengo]
+    clubes = [Arsenal, Flamengo]
 
     for clube in clubes:
         print("\n" + "-" * 40)

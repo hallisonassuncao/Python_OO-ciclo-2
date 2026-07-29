@@ -33,7 +33,7 @@ class ClubeUEFA(ClubeParticipante):
     def gerar_relatorio_tecnico(self):
         self.exibir_dados()
         desempenho = self.calcular_desempenho()
-        print(f"Desempenho técnico: {desempenho:.2f}")
+        print(f"Desempenho: {desempenho:.2f}")
 
 
 class ClubeCONMEBOL(ClubeParticipante):
@@ -43,18 +43,18 @@ class ClubeCONMEBOL(ClubeParticipante):
     def gerar_relatorio_tecnico(self):
         self.exibir_dados()
         desempenho = self.calcular_desempenho()
-        print(f"Desempenho técnico: {desempenho:.2f}")
+        print(f"Desempenho: {desempenho:.2f}")
 
 
 def main():
-    real_madrid = ClubeUEFA("Barcelona", "Noruega", "UEFA", 1, 15, 6)
-    botafogo = ClubeCONMEBOL("Flamengo", "Brasil", "CONMEBOL", 8, 15, 5)
+    Barcelona = ClubeUEFA("Barcelona", "Noruega", "UEFA", 1, 15, 6)
+    Flamengo = ClubeCONMEBOL("Flamengo", "Brasil", "CONMEBOL", 8, 15, 5)
 
-    clubes = [real_madrid, botafogo]
+    clubes = [Barcelona, Flamengo]
 
     for clube in clubes:
         print("\n" + "-" * 40)
-        clube.gerar_relatorio_tecnico()
+        clube.gerar_relatorio()
 
 if __name__ == "__main__":
     main()

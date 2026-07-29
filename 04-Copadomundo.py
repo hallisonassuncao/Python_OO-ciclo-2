@@ -54,7 +54,7 @@ def main():
 
     for clube in clubes:
         print("\n" + "-" * 40)
-        clube.gerar_relatorio()
+        clube.gerar_relatorio_tecnico()
 
 if __name__ == "__main__":
     main()

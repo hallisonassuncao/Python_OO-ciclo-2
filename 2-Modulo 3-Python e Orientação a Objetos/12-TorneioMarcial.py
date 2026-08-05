@@ -59,7 +59,6 @@ class Namekuseijin(Lutador):
         print(f"\n{self.nome} Golpe Tesoura !\n")
 
 
-
 def main():
     lutadores = []
 
@@ -84,12 +83,12 @@ def main():
                 nome = input("\nNome do lutador: ").strip()
 
                 if not nome:
-                    raise Exception("O nome não pode estar vazio.")
+                    raise Exception("Erro: O nome não pode estar vazio.")
                 
                 poder_input = input("\nNível do poder: ").strip()
 
                 if not poder_input:
-                    raise Exception("O nível de poder não pode estar vazio.")
+                    raise Exception("Erro: O nível de poder não pode estar vazio.")
 
                 poder = int(poder_input)
 
@@ -108,7 +107,7 @@ def main():
                 
                 lutadores.append(lutador)
 
-                print(f"\n{lutador.obter_nome()} Scadastrado com sucesso!\n")
+                print(f"\n{lutador.obter_nome()} Cadastrado com sucesso!\n")
 
             except Exception as e:
                 print(f"\nErro: {e}")

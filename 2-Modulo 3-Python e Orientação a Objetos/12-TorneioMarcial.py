@@ -114,7 +114,7 @@ def main():
             
         elif opcao == "2":
             if not lutadores:
-                print("\nNenhum lutador cadastrado.\n")
+                print("\nErro: Nenhum lutador cadastrado.\n")
             else:
                 print("\n---Lutadores Inscritos---")
 

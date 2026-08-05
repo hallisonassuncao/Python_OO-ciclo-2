@@ -138,7 +138,7 @@ def main():
                 else:
                     raise Exception("Número inválido para escolha de lutador.")
             except Exception as e:
-                print(f"\nErro: {e}")
+                print(f"\nErro: {e}\n")
 
         elif opcao == "4":
             print("\nEncerrando o sistema.\n")
